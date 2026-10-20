@@ -3,7 +3,28 @@
    Design Theme: Deep Emerald & Imperial Gold Heritage Dining
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+/* Font Display Swap for Font Awesome 6 */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2') format('woff2');
+}
 
 :root {
   /* Theme Palette - Deep Emerald & Heritage Gold */
@@ -27,10 +48,10 @@
   --gold-glow: 0 0 24px rgba(212, 175, 55, 0.22);
   --gold-glow-strong: 0 0 35px rgba(212, 175, 55, 0.4);
 
-  /* Typography Colors */
+  /* Typography Colors (High Contrast for WCAG AA) */
   --text-main: #f5f2ea;
-  --text-secondary: #b6c7bd;
-  --text-muted: #82998c;
+  --text-secondary: #cdded3;
+  --text-muted: #b0c9b9;
   --text-gold: #f2db94;
 
   /* Official WhatsApp */
@@ -116,6 +137,22 @@ p {
   color: var(--text-secondary);
   font-size: 1.025rem;
   margin-bottom: 1.25rem;
+}
+
+/* High Contrast Overrides for Bootstrap Utilities */
+.text-secondary,
+p.text-secondary,
+.small.text-secondary {
+  color: #cdded3 !important;
+}
+
+.text-muted,
+small.text-muted {
+  color: #b0c9b9 !important;
+}
+
+em {
+  color: #cdded3;
 }
 
 a {
@@ -301,8 +338,8 @@ a:hover, a:focus-visible {
 
 .btn-wa-official {
   background-color: var(--wa-official);
-  color: #ffffff !important;
-  font-weight: 600;
+  color: #041a0d !important;
+  font-weight: 700;
   font-size: 0.92rem;
   padding: 12px 24px;
   border-radius: var(--border-radius-sm);
@@ -317,9 +354,14 @@ a:hover, a:focus-visible {
 
 .btn-wa-official:hover, .btn-wa-official:focus-visible {
   background-color: var(--wa-official-hover);
-  color: #ffffff !important;
+  color: #041a0d !important;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+}
+
+.btn-wa-official svg,
+.btn-wa-official .wa-icon {
+  fill: #041a0d !important;
 }
 
 .btn-wa-official .wa-icon,
@@ -1243,14 +1285,17 @@ dialog#galleryLightbox::backdrop {
   font-size: 0.88rem;
 }
 
-.footer-bottom-links {
-  display: flex;
-  gap: 18px;
+.footer-bottom a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--gold-light);
+  transition: color 0.2s;
 }
 
 .footer-bottom-links a {
   color: var(--text-muted);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
   transition: color 0.2s;
 }
 

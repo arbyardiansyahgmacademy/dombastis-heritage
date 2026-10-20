@@ -16,19 +16,21 @@
   <meta property="og:image" content="https://dombastisheritage.web.id/assets/img/paket/paket-aqiqah-lengkap.webp">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/assets/img/logo-badge.svg">
-
-  <!-- Google Fonts & FontAwesome -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo-badge.svg">  <!-- Preconnect to Google Fonts for Fast Connection Handshake -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <!-- Custom Stylesheet -->
+  <!-- Self-Hosted High-Performance CSS (Zero 3rd-Party Connection Latency) -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Google Fonts with Display Swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
@@ -366,7 +368,7 @@
 
         <!-- Kolom 2: Navigasi -->
         <div class="col-6 col-md-3 col-lg-2">
-          <h4 class="footer-title">Navigasi</h4>
+          <h3 class="footer-title">Navigasi</h3>
           <ul class="footer-links">
             <li><a href="/"><i class="fas fa-chevron-right"></i> Beranda</a></li>
             <li><a href="/tentang-kami"><i class="fas fa-chevron-right"></i> Tentang Kami</a></li>
@@ -380,7 +382,7 @@
 
         <!-- Kolom 3: Layanan -->
         <div class="col-6 col-md-3 col-lg-2">
-          <h4 class="footer-title">Sajian Unggulan</h4>
+          <h3 class="footer-title">Sajian Unggulan</h3>
           <ul class="footer-links">
             <li><a href="/menu"><i class="fas fa-chevron-right"></i> Gulai Kambing</a></li>
             <li><a href="/menu"><i class="fas fa-chevron-right"></i> Nasi Briyani Spesial</a></li>
@@ -393,7 +395,7 @@
 
         <!-- Kolom 4: Alamat & Kontak -->
         <div class="col-12 col-md-6 col-lg-4">
-          <h4 class="footer-title">Alamat &amp; Kontak</h4>
+          <h3 class="footer-title">Alamat &amp; Kontak</h3>
           
           <div class="footer-contact-item">
             <div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div>
@@ -426,9 +428,11 @@
           </div>
         </div>
 
-            <!-- Bottom -->
+            </div>
+
+      <!-- Bottom -->
       <div class="footer-bottom">
-        <p class="mb-0">&copy; 2026 Dombastis Heritage. Seluruh Hak Cipta Dilindungi. — <a href="/" style="color: var(--gold-primary);">dombastisheritage.web.id</a></p>
+        <p class="mb-0">&copy; 2026 Dombastis Heritage. Seluruh Hak Cipta Dilindungi. — <a href="/" style="color: var(--gold-primary); text-decoration: underline;">dombastisheritage.web.id</a></p>
         <div class="footer-bottom-links">
           <a href="/tentang-kami">Tentang Kami</a>
           <a href="/kontak">Kebijakan Privasi</a>
@@ -449,7 +453,7 @@
     </a>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

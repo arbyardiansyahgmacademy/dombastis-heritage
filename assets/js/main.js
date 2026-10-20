@@ -267,31 +267,45 @@ function initPageFeatures() {
   /* 1. Header Scrolled State */
   const header = document.querySelector('.site-header');
   if (header) {
+    let headerTicking = false;
     const handleScrollHeader = () => {
-      if (window.scrollY > 40) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
+      if (!headerTicking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > 40) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+          headerTicking = false;
+        });
+        headerTicking = true;
       }
     };
     window.removeEventListener('scroll', handleScrollHeader);
     window.addEventListener('scroll', handleScrollHeader, { passive: true });
-    handleScrollHeader();
+    window.requestAnimationFrame(handleScrollHeader);
   }
 
   /* 2. Back to Top Button */
   const backToTopBtn = document.getElementById('backToTopBtn');
   if (backToTopBtn) {
+    let bttTicking = false;
     const handleScrollBTT = () => {
-      if (window.scrollY > 300) {
-        backToTopBtn.classList.add('show');
-      } else {
-        backToTopBtn.classList.remove('show');
+      if (!bttTicking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+          } else {
+            backToTopBtn.classList.remove('show');
+          }
+          bttTicking = false;
+        });
+        bttTicking = true;
       }
     };
     window.removeEventListener('scroll', handleScrollBTT);
     window.addEventListener('scroll', handleScrollBTT, { passive: true });
-    handleScrollBTT();
+    window.requestAnimationFrame(handleScrollBTT);
 
     backToTopBtn.onclick = (e) => {
       e.preventDefault();
@@ -540,9 +554,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Setup instant navigation delegation
   setupInstantNavigation();
 
-  // Pre-cache all core site pages in background for instant navigation
-  prefetchCoreRoutes();
-
   // Initialize interactive features
   initPageFeatures();
+
+  // Pre-cache core site pages when the browser is idle to avoid competing with FCP/LCP
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(() => prefetchCoreRoutes(), { timeout: 3500 });
+  } else {
+    setTimeout(prefetchCoreRoutes, 3000);
+  }
 });
