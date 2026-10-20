@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- 1. Beranda / Homepage -->
+  <url>
+    <loc>https://dombastisheritage.web.id/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/hero-dombastis.webp</image:loc>
+      <image:title>Sajian Istimewa Kambing dan Nasi Briyani Dombastis Heritage</image:title>
+    </image:image>
+  </url>
+
+  <!-- 2. Tentang Kami -->
+  <url>
+    <loc>https://dombastisheritage.web.id/tentang-kami</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/hero-dombastis.webp</image:loc>
+      <image:title>Dedikasi Cita Rasa Warisan Leluhur Dombastis Heritage</image:title>
+    </image:image>
+  </url>
+
+  <!-- 3. Menu -->
+  <url>
+    <loc>https://dombastisheritage.web.id/menu</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/menu/nasi-briyani-kambing-spesial.webp</image:loc>
+      <image:title>Nasi Briyani Kambing Spesial Dombastis Heritage</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/menu/gulai-kambing-heritage.webp</image:loc>
+      <image:title>Gulai Kambing Rempah Heritage</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/menu/kambing-bakar-madu-rempah.webp</image:loc>
+      <image:title>Kambing Bakar Madu Rempah</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/menu/sate-kambing-rempah.webp</image:loc>
+      <image:title>Sate Kambing Bumbu Rempah Tradisi</image:title>
+    </image:image>
+  </url>
+
+  <!-- 4. Paket -->
+  <url>
+    <loc>https://dombastisheritage.web.id/paket</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/paket/paket-aqiqah-lengkap.webp</image:loc>
+      <image:title>Paket Katering Masakan Aqiqah Syar'i dan Higienis</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/paket/paket-keluarga.webp</image:loc>
+      <image:title>Paket Jamuan Keluarga dan Acara Syukuran</image:title>
+    </image:image>
+  </url>
+
+  <!-- 5. Galeri -->
+  <url>
+    <loc>https://dombastisheritage.web.id/galeri</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/galeri/galeri-1.webp</image:loc>
+      <image:title>Dokumentasi Jamuan Akbar Dombastis Heritage</image:title>
+    </image:image>
+  </url>
+
+  <!-- 6. Blog Index -->
+  <url>
+    <loc>https://dombastisheritage.web.id/blog</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/blog/panduan-aqiqah.webp</image:loc>
+      <image:title>Kumpulan Artikel Kuliner dan Panduan Jamuan Heritage</image:title>
+    </image:image>
+  </url>
+
+  <!-- 7. Kontak -->
+  <url>
+    <loc>https://dombastisheritage.web.id/kontak</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 8. Artikel: Olahan Kambing untuk Acara Keluarga -->
+  <url>
+    <loc>https://dombastisheritage.web.id/blog/olahan-kambing-untuk-acara-keluarga</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/blog/olahan-kambing.webp</image:loc>
+      <image:title>Rahasia Mengolah Daging Kambing untuk Acara Keluarga: Empuk, Berempah, Bebas Prengus</image:title>
+    </image:image>
+  </url>
+
+  <!-- 9. Artikel: Mengenal Nasi Briyani -->
+  <url>
+    <loc>https://dombastisheritage.web.id/blog/mengenal-nasi-briyani-dan-pilihan-sajiannya</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/blog/nasi-briyani.webp</image:loc>
+      <image:title>Mengenal Nasi Briyani Autentik: Sejarah, Butiran Beras Basmati, dan Paduan Lauknya</image:title>
+    </image:image>
+  </url>
+
+  <!-- 10. Artikel: Panduan Memilih Paket Aqiqah -->
+  <url>
+    <loc>https://dombastisheritage.web.id/blog/panduan-memilih-paket-aqiqah</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://dombastisheritage.web.id/assets/img/blog/panduan-aqiqah.webp</image:loc>
+      <image:title>Panduan Lengkap Memilih Paket Aqiqah Siap Saji: Syariat, Menu, dan Kemasan Higienis</image:title>
+    </image:image>
+  </url>
+</urlset>

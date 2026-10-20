@@ -1,0 +1,11 @@
+# Robots.txt for Dombastis Heritage
+# Official Domain: https://dombastisheritage.web.id/
+
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dombastisheritage.web.id
+
+# Sitemaps
+Sitemap: https://dombastisheritage.web.id/sitemap.xml
