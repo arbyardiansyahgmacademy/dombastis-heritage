@@ -1381,28 +1381,78 @@ dialog#galleryLightbox::backdrop {
 /* ==========================================================================
    ARTICLE REFERENCE TEMPLATE STYLES
    ========================================================================== */
+/* Breadcrumb Bar (Seamless Background & Elegant Heritage Styling) */
 .article-breadcrumb-bar {
-  background: rgba(4, 14, 9, 0.92);
-  border-bottom: 1px solid var(--gold-border);
-  padding: 14px 0;
-  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  padding: 16px 0 8px;
+  margin-bottom: 0;
+}
+
+.article-breadcrumb-bar nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.88rem;
 }
 
 .article-breadcrumb-bar nav a {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  font-weight: 500;
 }
 
 .article-breadcrumb-bar nav a:hover {
   color: var(--gold-light);
+  transform: translateY(-1px);
 }
 
-.article-breadcrumb-bar nav span {
-  color: var(--text-muted);
-  margin: 0 8px;
+.article-breadcrumb-bar nav a i {
+  color: var(--gold-primary);
   font-size: 0.85rem;
+}
+
+.article-breadcrumb-bar .breadcrumb-separator {
+  color: rgba(212, 175, 55, 0.45);
+  font-size: 0.75rem;
+  margin: 0 2px;
+}
+
+.article-breadcrumb-bar .breadcrumb-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--gold-light);
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.88rem;
+  letter-spacing: 0.2px;
+}
+
+.article-breadcrumb-bar .breadcrumb-current i {
+  color: var(--gold-primary);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 767.98px) {
+  .article-breadcrumb-bar {
+    padding: 12px 0 6px;
+  }
+  .article-breadcrumb-bar nav {
+    font-size: 0.82rem;
+    gap: 6px;
+  }
+  .article-breadcrumb-bar .breadcrumb-current {
+    font-size: 0.82rem;
+    padding: 0;
+  }
 }
 
 .article-page-main {
